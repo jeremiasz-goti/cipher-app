@@ -1,0 +1,11 @@
+
+BIND = "127.0.0.1"
+
+
+PORT = 5000
+WORKERS = 5
+RELOAD = "True"
+
+
+ORIGINS = "http://127.0.0.1:5300"
+
