@@ -1,18 +1,20 @@
 <template>
   <div class="Cipher">
- <h3>Zakoduj wiadomość</h3>
+  
         <div class="form-group">
             <label for="encode">Zakoduj wiadomość: </label><br/>
             <div class="input-group pt-1">
-              <input id="encode" class="amounts" type="text" v-model="encode" placeholder="Twoja wiadomość"
+              <input id="encode" style="text-align:center;" class="amounts" type="text" v-model="encode" placeholder="Twoja wiadomość"
                      min="0">
             </div>
 
             <label for="shift">Przestawienie: </label><br/>
             <div class="input-group pt-1">
-              <input id="shift" class="amounts" type="text" v-model="shift" placeholder="wpisz liczbe"
+              <input id="shift" class="amounts" style="text-align:center;" type="text" v-model="shift" placeholder="wpisz liczbe"
                      min="0">
             </div>
+
+            
 
 
 
@@ -20,7 +22,7 @@
             <h4> {{ encrypted }} </h4>
             <h4> Klucz: {{ this.shift }}  </h4>
             <br>
-            <button @click="encodeText()">Zakoduj</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="encodeText()">Zakoduj</button>
             <br><br>
           </div>
        
