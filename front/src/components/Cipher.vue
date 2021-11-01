@@ -18,7 +18,7 @@
 
             <h4> Twoja wiadomość :</h4>
             <h4> {{ encrypted }} </h4>
-            <h4>  </h4>
+            <h4> Klucz: {{ this.shift }}  </h4>
             <br>
             <button @click="encodeText()">Zakoduj</button>
             <br><br>
@@ -55,6 +55,3 @@ export default {
 }
 </script>
 
-<style>
-  table, th, td { border: 1px solid black; padding:5px }
-</style>
